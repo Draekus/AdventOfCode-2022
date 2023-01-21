@@ -47,9 +47,8 @@ public class Puzzle2 {
                 }
                 counter++;
                 }
-				System.out.println(totalScore);
             
-			    //System.out.printf("Total Score: %d\n", totalScore);
+			    System.out.printf("Total Score: %d\n", totalScore);
 			    myReader.close();
 			
             
