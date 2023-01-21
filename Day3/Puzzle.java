@@ -21,13 +21,13 @@ class Puzzle {
                
                 
                 
-				boolean duplicate = false;
+				
                 int score = 0;
                 for (int i = 0; i < item1_arr.length; i++) {
-                    for (String s : item2_arr) {
-                        if (item1_arr[i].equals(s)) {
-                            duplicate = true;
-                            score = getPriority(item1.charAt(i));
+                    for (int j = 0; j < item2_arr.length; j++) {
+                        if (item1_arr[i].equals(item2_arr[j])) {
+                            
+                            score = getPriority(item2_arr[j].charAt(0));
                         }
                     }
                 }
